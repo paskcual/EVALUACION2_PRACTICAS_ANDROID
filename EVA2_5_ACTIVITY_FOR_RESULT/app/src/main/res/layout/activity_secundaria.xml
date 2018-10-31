@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Secundaria">
+
+    <EditText
+        android:id="@+id/etxtIntroduceDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Introduce algun dato"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/btnCerrarEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:onClick="clickSecun"
+        android:layout_below="@+id/etxtIntroduceDato"
+        android:text="cerrar y enviar" />
+</RelativeLayout>
