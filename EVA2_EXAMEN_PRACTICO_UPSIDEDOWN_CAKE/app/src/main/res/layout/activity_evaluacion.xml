@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Evaluacion">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="241dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Evaluación"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imvImagenE"
+        android:layout_width="188dp"
+        android:layout_height="182dp"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/barrafina" />
+
+    <TextView
+        android:id="@+id/lblDescripcionE"
+        android:layout_width="194dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/lblNombreE"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/lblDireccionTelefonoE"
+        android:layout_width="192dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/lblDescripcionE"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/lblDireccionTelefonoE"
+        android:layout_alignParentStart="true"
+        android:text="Tu opinión:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lblNombreE"
+        android:layout_width="192dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/imvImagenE"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imvR2"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_alignTop="@+id/imvR1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="146dp"
+        android:onClick="ClickR2"
+        app:srcCompat="@drawable/estrellavacia" />
+
+    <ImageView
+        android:id="@+id/imvR3"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_alignTop="@+id/imvR2"
+        android:layout_alignEnd="@+id/imvImagenE"
+        android:onClick="ClickR3"
+        app:srcCompat="@drawable/estrellavacia" />
+
+    <ImageView
+        android:id="@+id/imvR1"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:onClick="ClickR1"
+        app:srcCompat="@drawable/estrellavacia" />
+</RelativeLayout>
